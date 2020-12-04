@@ -10,8 +10,7 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
-
-
+  q
 ### Node ###
 lib-cov
 *.seed
@@ -47,3 +46,4 @@ node_modules
 
 ## API keys
 client/env/config.js
+client/env/config.example.js.
