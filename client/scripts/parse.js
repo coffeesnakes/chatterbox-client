@@ -7,11 +7,14 @@ var Parse = {
       type: "POST",
       data: JSON.stringify(message),
       contentType: "application/json",
-      success: successCB,
+      success: successCB || function (data) {
+        console.log('this message was sent to chatterbox');
+        console.log(data);
+      },
       error:
         errorCB ||
         function (data) {
-          console.error("chatterbox: Failed to send messages", data);
+          console.error("Failed to send", data);
         },
     });
   },

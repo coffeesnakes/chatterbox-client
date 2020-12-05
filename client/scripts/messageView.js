@@ -1,9 +1,10 @@
 var MessageView = {
-  render: _.template(
-    "<div class='chat'>" +
-   "<div class='username'>" + "<%= username %>" + "</div>" +
-   "<p class='text>" + "<%= text %>" +  "</p>" +
-   "<p class='roomname'>" + "<%= roomname%>" + "</p>" +
-   "</div>"
-  )
+  render: _.template(`
+  <div class="chat">
+  <div class="username" <%= username %>
+  </div>
+  <div> <%= text %> </div>
+  </div>
+  `)
 };
+// allows us to output html with formed template
