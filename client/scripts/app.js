@@ -2,7 +2,7 @@ var App = {
 
   $spinner: $('.spinner img'),
 
-  username: 'anonymous',
+  username: 'helpmeeeeee',
 
   initialize: function() {
     App.username = window.location.search.substr(10);
